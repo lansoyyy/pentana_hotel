@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:pentana_hotel/screens/home_screen.dart';
 import 'package:pentana_hotel/utlis/colors.dart';
 import 'package:pentana_hotel/widgets/button_widget.dart';
 import 'package:pentana_hotel/widgets/logo_widget.dart';
@@ -77,7 +78,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         ButtonWidget(
                           color: Colors.amber,
                           label: 'Login',
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => const HomeScreen()));
+                          },
                         ),
                       ],
                     ),
