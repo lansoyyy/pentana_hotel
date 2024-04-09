@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
+import 'package:pentana_hotel/screens/tabs/frontoffice_tab.dart';
 import 'package:pentana_hotel/utlis/colors.dart';
 import 'package:pentana_hotel/widgets/button_widget.dart';
 import 'package:pentana_hotel/widgets/logo_widget.dart';
@@ -126,8 +127,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               const SizedBox(
-                height: 50,
+                height: 20,
               ),
+              isfrontoffice ? const FrontOfficeTab() : const SizedBox(),
             ],
           ),
         ),
