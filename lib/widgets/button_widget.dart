@@ -13,7 +13,7 @@ class ButtonWidget extends StatelessWidget {
   final Color? textColor;
 
   const ButtonWidget(
-      {Key? key,
+      {super.key,
       this.radius = 10,
       required this.label,
       this.textColor = Colors.white,
@@ -21,8 +21,7 @@ class ButtonWidget extends StatelessWidget {
       this.width = 275,
       this.fontSize = 18,
       this.height = 50,
-      this.color = const Color(0xff43C3FA)})
-      : super(key: key);
+      this.color = const Color.fromARGB(255, 213, 166, 10)});
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
