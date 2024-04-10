@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/group_tab.dart';
+import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/individual_tab.dart';
 import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/new_reserve_tab.dart';
+import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/walkin_tab.dart';
 import 'package:pentana_hotel/utlis/colors.dart';
 import 'package:pentana_hotel/widgets/button_widget.dart';
 import 'package:pentana_hotel/widgets/text_widget.dart';
@@ -156,7 +159,13 @@ class _FrontOfficeTabState extends State<FrontOfficeTab> {
         const SizedBox(
           height: 50,
         ),
-        one ? const NewReserveTab() : const SizedBox(),
+        one
+            ? const NewReserveTab()
+            : two
+                ? const WalkinTab()
+                : three
+                    ? const IndividualTab()
+                    : const GroupTab(),
       ],
     );
   }

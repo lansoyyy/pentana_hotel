@@ -4,14 +4,14 @@ import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/individual_tab.dart'
 import 'package:pentana_hotel/utlis/colors.dart';
 import 'package:pentana_hotel/widgets/text_widget.dart';
 
-class NewReserveTab extends StatefulWidget {
-  const NewReserveTab({super.key});
+class WalkinTab extends StatefulWidget {
+  const WalkinTab({super.key});
 
   @override
-  State<NewReserveTab> createState() => _NewReserveTabState();
+  State<WalkinTab> createState() => _WalkinTabState();
 }
 
-class _NewReserveTabState extends State<NewReserveTab> {
+class _WalkinTabState extends State<WalkinTab> {
   String selected = '';
   @override
   Widget build(BuildContext context) {
