@@ -37,18 +37,19 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsets.fromLTRB(30, 50, 30, 20),
           child: Column(
             children: [
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  CircleAvatar(
-                    minRadius: 125,
-                    maxRadius: 125,
+                  Image.asset(
+                    'assets/images/logs.png',
+                    height: 150,
+                    width: 150,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 50,
                   ),
-                  LogoWidget(),
+                  const LogoWidget(),
                 ],
               ),
               const SizedBox(

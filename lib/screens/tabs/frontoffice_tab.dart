@@ -52,9 +52,9 @@ class _FrontOfficeTabState extends State<FrontOfficeTab> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const CircleAvatar(
-                          minRadius: 25,
-                          maxRadius: 25,
+                        Image.asset(
+                          'assets/images/logs.png',
+                          height: 150,
                         ),
                         const SizedBox(
                           width: 10,

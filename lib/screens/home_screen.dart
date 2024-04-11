@@ -47,9 +47,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const CircleAvatar(
-                    minRadius: 50,
-                    maxRadius: 50,
+                  Image.asset(
+                    'assets/images/logs.png',
+                    height: 150,
+                    width: 150,
                   ),
                   const SizedBox(
                     width: 30,
