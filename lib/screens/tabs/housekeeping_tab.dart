@@ -4,6 +4,7 @@ import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/group_tab.dart';
 import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/individual_tab.dart';
 import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/new_reserve_tab.dart';
 import 'package:pentana_hotel/screens/tabs/frontoffice_tabs/walkin_tab.dart';
+import 'package:pentana_hotel/screens/tabs/housekeeping_tabs/inventory_tab.dart';
 import 'package:pentana_hotel/screens/tabs/housekeeping_tabs/roomstatus_tab.dart';
 import 'package:pentana_hotel/utlis/colors.dart';
 import 'package:pentana_hotel/widgets/button_widget.dart';
@@ -198,7 +199,7 @@ class _HouseKeepingTabState extends State<HouseKeepingTab> {
         one
             ? const RoomStatusTab()
             : two
-                ? const WalkinTab()
+                ? const InventoryTab()
                 : three
                     ? const IndividualTab()
                     : const GroupTab(),
