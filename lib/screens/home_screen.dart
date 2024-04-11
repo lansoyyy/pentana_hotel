@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 import 'package:pentana_hotel/screens/tabs/frontoffice_tab.dart';
+import 'package:pentana_hotel/screens/tabs/housekeeping_tab.dart';
 import 'package:pentana_hotel/utlis/colors.dart';
 import 'package:pentana_hotel/widgets/button_widget.dart';
 import 'package:pentana_hotel/widgets/logo_widget.dart';
@@ -32,6 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
         width: double.infinity,
         decoration: const BoxDecoration(
           color: Colors.black,
+          image: DecorationImage(
+              image: AssetImage(
+                'assets/images/unnamed.jpg',
+              ),
+              fit: BoxFit.cover),
         ),
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -129,7 +135,11 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 20,
               ),
-              isfrontoffice ? const FrontOfficeTab() : const SizedBox(),
+              isfrontoffice
+                  ? const FrontOfficeTab()
+                  : ishousekeeping
+                      ? const HouseKeepingTab()
+                      : const SizedBox(),
             ],
           ),
         ),

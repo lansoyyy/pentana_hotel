@@ -27,6 +27,11 @@ class _LoginScreenState extends State<LoginScreen> {
         width: double.infinity,
         decoration: const BoxDecoration(
           color: Colors.black,
+          image: DecorationImage(
+              image: AssetImage(
+                'assets/images/unnamed.jpg',
+              ),
+              fit: BoxFit.cover),
         ),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(30, 50, 30, 20),
